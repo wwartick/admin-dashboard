@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template: 20vh 80vh / 15vw 65vw 20vw;
+}
+
+.sidebar{
+    background-color: blue;
+    color: white;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.header{
+    background-color: grey;
+    grid-area: 1 / 2 / 2 / 4
+}
+
+.projects{
+    display: grid;
+    grid-template: repeat(3, 25vh ) / repeat(2, 30vw);
+}
+
+.project{
+    background-color: silver;
+    margin: 1.5vh 1.5vw;
+    padding: 10px 30px 0 40px;
+    border-radius: 4%;
+    border-left: 10px solid orange;
+}
+
+
+
+
+
