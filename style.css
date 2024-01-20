@@ -1,22 +1,25 @@
 *{
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 body{
     display: grid;
     grid-template: 20vh 80vh / 15vw 66vw 19vw;
+    background-color: #FED9ED;
 }
 
 .sidebar{
-    background-color: blue;
-    color: white;
+    background-color: #33186B;
+    color: #f8cef6;
     grid-area: 1 / 1 / 3 / 2;
 }
 
 .header{
-    background-color: grey;
-    grid-area: 1 / 2 / 2 / 4
+    background-color: #C499F3;
+    grid-area: 1 / 2 / 2 / 4;
+    color:#33186B
 }
 
 .projects{
@@ -27,27 +30,29 @@ body{
 .main > h1{
     margin-left: 29px;
     margin-top: 10px;
+    color: #303d70;
 }
 
 .project{
-    background-color: silver;
+    background-color: #BB9CC0;
     margin: 1.5vh .75vw 1.5vh 1vw;
     padding: 20px 30px 0 40px;
     border-radius: 4%;
-    border-left: 10px solid orange;
+    border-left: 10px solid #D63484;
     text-align: left;
     overflow: hidden;
     overflow-wrap: break-word;
     position: relative;
+    color: #1b0646;
 }
 
 .project > h2 {
     width: 10vw;
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 .project > p{
-    font-size: 1em;
+    font-size: 1rem;
     width: 20vw;
 }
 
@@ -63,7 +68,7 @@ body{
 
 .icons > ion-icon{
     padding: 2px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 .icons> ion-icon:hover{
@@ -76,11 +81,12 @@ body{
     grid-template-rows: 62px 30vh 40px 36vh;
     margin-right: 1.5vw;
     margin-left: .5vw;
+    color: #1b0646;
 }
 
 .announcements, .trending{
    text-align: left;
-   background-color: grey;
+   background-color: #BB9CC0;
    border-radius: 2%;
    padding: 10px;
    overflow: hidden;
@@ -90,11 +96,13 @@ body{
 .anH1{
     margin-top: 20px;
     font-size: 1.5rem;
+    color: #303d70;
 }
 
 .trH1{
     font-size: 1.5rem;
     margin-top: 10px;
+    color: #303d70;
 }
 
 .trending{
@@ -113,7 +121,7 @@ body{
 
 .trending-topic > ion-icon{
     margin-left: 2vw;
-    font-size: 3em;
+    font-size: 3rem;
     grid-row: 1 / span 2;
 }
 
@@ -128,12 +136,12 @@ body{
 }
 
 .announcement > h2{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .announcement > p{
-    font-size: .75em;
-    border-bottom: 1px solid black;
+    font-size: .75rem;
+    border-bottom: 1px solid #D63484;
     padding-bottom: 7px;
 }
 
@@ -145,8 +153,8 @@ body{
 
 .title{
     display: flex;
-    font-size: 2.5em;
-    padding-top: 0;
+    font-size: 2.5rem;
+    padding-top: 20px;
     gap: 8px;
     align-items: center;
     padding-left: 1vw;
@@ -161,7 +169,7 @@ body{
     gap: 1vw;
     margin-bottom: 10px;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 1.25vw;
 }
 
@@ -185,25 +193,71 @@ input{
     height: 3vh;
     border-radius: 15px;
     border: 1px;
+    background-color: #FED9ED;
 }
 
 .top-header > ion-icon{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-right: 2.5vw;
 }
 
 .top-header >ion-icon:nth-child(4){
-    font-size: 3em;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: #A94438;
+    color: #E6BAA3;
+    padding: 4px;
 }
 
 .top-header > span{
-    font-size: 2em;
+    font-size: 2rem;
 }
 
-.top-header > ion-icon:hover, .top-header >span:hover{
+.top-header > ion-icon:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
 
+.bottom-header {
+    display: grid;
+    grid-template-columns: 5vw 58.7vw 19vw;
+    padding-top: 2.5vh;
+}
 
+.bottom-header > ion-icon{
+    margin-left: 1.1vw;
+    font-size: 3.5rem;
+    border-radius: 50%;
+    background-color: #A94438;
+    color: #E6BAA3;
+    padding: 4px;
+}
 
+.bottom-header > .hello-there{
+    padding-top: 7px;
+    margin-left: 1vw;
+}
+
+button{
+    width: 5vw;
+    height: 3.6vh;
+    border-radius: 50px;
+    background-color: #33186B;
+    color:#C499F3;
+    border:1px solid #33186B
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+button:active{
+    background-color: #7360DF;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
