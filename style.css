@@ -172,6 +172,38 @@ body{
     left: 50px;
 }
 
+.top-header{
+    display: grid;
+    grid-template-columns: 2.4vw 55vw 5vw 4vw 12vw ;
+    padding-top: 2vh;
+    padding-left: 4.5vw;
+    align-items: center;
+}
+
+input{
+    width: 50vw;
+    height: 3vh;
+    border-radius: 15px;
+    border: 1px;
+}
+
+.top-header > ion-icon{
+    font-size: 1.5em;
+    margin-right: 2.5vw;
+}
+
+.top-header >ion-icon:nth-child(4){
+    font-size: 3em;
+}
+
+.top-header > span{
+    font-size: 2em;
+}
+
+.top-header > ion-icon:hover, .top-header >span:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 
 
 
