@@ -147,7 +147,7 @@ body{
 
 .sidebar {
     display: grid;
-    grid-template-rows:5vh 25vh 50vh;
+    grid-template-rows:7vh 25vh 50vh;
     gap:5vh
 }
 
