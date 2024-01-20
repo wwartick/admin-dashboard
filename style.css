@@ -48,15 +48,16 @@ body{
 
 .project > p{
     font-size: 1em;
-    width: 16vw;
+    width: 20vw;
 }
 
 .icons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
-    left:90%;
-    top: 50%;
+    gap:1vw;
+    left:75%;
+    top: 75%;
 
 }
 
@@ -136,6 +137,40 @@ body{
     padding-bottom: 7px;
 }
 
+.sidebar {
+    display: grid;
+    grid-template-rows:5vh 25vh 50vh;
+    gap:5vh
+}
+
+.title{
+    display: flex;
+    font-size: 2.5em;
+    padding-top: 0;
+    gap: 8px;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.top-options > ion-icon{
+    margin-top: 100px;
+}
+
+.options{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 10px;
+    align-items: center;
+    font-size: 1.5em;
+    padding-left: 1.25vw;
+}
+
+.options:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    position: relative;
+    left: 50px;
+}
 
 
 
